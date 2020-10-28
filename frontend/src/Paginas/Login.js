@@ -4,12 +4,16 @@ import "./Login.css"
 import logo from "../Imagenes/Logo.JPG"
 function Login() {
   return (
-    <form class="form-signin">
+
+    <div> 
+ <center>
+    <img className= "logo" src={logo} 
+    width="300"
+    height="300"/>
+    </center>
+
+    <form class="form-signin input">
       
-        <img src={logo} 
-          alt=""
-          width="300"
-          height="300"/>
   
   <center>
       <input
@@ -43,6 +47,7 @@ function Login() {
       </button></center>
       <p class="mt-5 mb-3 text-muted"></p>
     </form>
+    </div>
   );
 }
 
