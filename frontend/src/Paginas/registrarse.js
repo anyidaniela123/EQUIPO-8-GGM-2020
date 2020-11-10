@@ -3,15 +3,23 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Login.css"
 import logo from "../Imagenes/Logo.JPG"
-function Login() {
+
+function registrarse() {
   return (
-    <center>
+
     <div> 
+ <center>
+    <img className= "logo" src={logo} 
+    width="300"
+    height="300"/>
+    </center>
 
     <form class="form-signin input">
       
+  
+  <center>
       <input
-        type="email"
+        type="Nombres"
         id="inputEmail"
         class="form-control"
         placeholder="Email address"
@@ -35,18 +43,17 @@ function Login() {
       </div><Link to="/Inicio">
       <button class="boton" type="submit">
         Inciar Sesión
+
       </button></Link>
-      <Link to="/registarse">
       <button class="boton" type="submit">
         Registrarse
-      </button></Link>
+      </button>
 
-     
+      </center>
       <p class="mt-5 mb-3 text-muted"></p>
     </form>
     </div>
-    </center>
   );
 }
 
-export default Login;
+export default registrarse;

@@ -8,11 +8,14 @@
       width: 90%;  
       padding: 5px;  
       margin-top: 5px;
+    }
+    .h {
+     
+     background-image: "../Imagenes/fondo.jpg"   ;    
 
+    }
 
-  }
 .logo {
     width: 200px;
     height: 200px;
-
 }
